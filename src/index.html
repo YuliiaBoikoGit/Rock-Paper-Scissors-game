@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yuliia Boiko</a>.
-  </div>
-  <script src="./index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="score-section">
+          <img src="./images/logo.svg" alt="Logo" class="logo" />
+          <div class="score-field">
+            <p class="score-field-title">SCORE</p>
+            <p class="score">0</p>
+          </div>
+        </section>
+        <section class="game-field">
+          <ul class="game-items-list">
+            <li class="game-item">
+              <button type="button" class="game-item-btn" aria-label="Rock Icon">
+                <svg class="modal-button-icon">
+                  <use href="./images/icons.svg#icon-rock"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="game-item">
+              <button type="button" class="game-item-btn" aria-label="Paper Icon">
+                <svg class="modal-button-icon">
+                  <use href="./images/icons.svg#icon-paper"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="game-item">
+              <button type="button" class="game-item-btn" aria-label="Scissors Icon">
+                <svg class="modal-button-icon">
+                  <use href="./images/icons.svg#icon-scissors"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="picked-items">
+            <li class="picked-item">YOU PICKED</li>
+            <li class="picked-item">THE HOUSE PICKED</li>
+          </ul>
+        </section>
+        <section class="game-result-field">
+          <p class="game-result">YOU WIN</p>
+          <p class="game-result">YOU LOSE</p>
+          <button type="button" class="button game-btn">PLAY AGAIN</button>
+        </section>
+        <section class="rules-field">
+          <button type="button" class="button rules-btn">RULES</button>
+          <div class="backdrop">
+            <div class="modal-window">
+              <h1 class="modal-window-title">RULES</h1>
+              <button type="button" class="modal-btn">
+                <svg class="modal-button-icon">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Yuliia Boiko</a>.
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>
