@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/_attribution.scss"],"names":[],"mappings":"AAAA,aACI,cAAA,CACA,kBAEA,eACC","file":"src.d8b09399.css","sourceRoot":"../src","sourcesContent":[".attribution {\n    font-size: 11px;\n    text-align: center;\n\n    a {\n     color: hsl(228, 45%, 44%);\n    }\n}"]}
