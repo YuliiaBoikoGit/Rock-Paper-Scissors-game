@@ -1,0 +1,54 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+
+    pointer-events: none;
+
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    z-index: 20;
+    visibility: none;
+    opacity: 0;
+    transition: transform $transition-time $cubic, visibility $transition-time $cubic,
+        opacity $transition-time $cubic;
+
+    &.is-show {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: 400px;
+        height: 415px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
+        overflow-y: scroll;
+    }
+}
+
+.is-hidden {
+    overflow: hidden;
+}

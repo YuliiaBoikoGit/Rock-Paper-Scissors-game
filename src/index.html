@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Rock, Paper, Scissors</title>
   </head>
   <body>
@@ -13,30 +19,31 @@
         <section class="score-section">
           <img src="./images/logo.svg" alt="Logo" class="logo" />
           <div class="score-field">
-            <p class="score-field-title">SCORE</p>
+            <p class="score-field-title">Score</p>
             <p class="score">0</p>
           </div>
         </section>
         <section class="game-field">
           <ul class="game-items-list">
+            <img src="./images/bg-triangle.svg" alt="Triangle Icon" class="game-field-bg-icon" />
             <li class="game-item">
-              <button type="button" class="game-item-btn" aria-label="Rock Icon">
-                <svg class="modal-button-icon">
-                  <use href="./images/icons.svg#icon-rock"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="game-item">
-              <button type="button" class="game-item-btn" aria-label="Paper Icon">
-                <svg class="modal-button-icon">
+              <button type="button" class="game-item-btn paper-btn" aria-label="Paper Icon">
+                <svg class="game-item-icon paper">
                   <use href="./images/icons.svg#icon-paper"></use>
                 </svg>
               </button>
             </li>
             <li class="game-item">
-              <button type="button" class="game-item-btn" aria-label="Scissors Icon">
-                <svg class="modal-button-icon">
+              <button type="button" class="game-item-btn scissors-btn" aria-label="Scissors Icon">
+                <svg class="game-item-icon scissors">
                   <use href="./images/icons.svg#icon-scissors"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="game-item">
+              <button type="button" class="game-item-btn rock-btn" aria-label="Rock Icon">
+                <svg class="game-item-icon rock">
+                  <use href="./images/icons.svg#icon-rock"></use>
                 </svg>
               </button>
             </li>
@@ -51,20 +58,20 @@
           <p class="game-result">YOU LOSE</p>
           <button type="button" class="button game-btn">PLAY AGAIN</button>
         </section>
-        <section class="rules-field">
-          <button type="button" class="button rules-btn">RULES</button>
-          <div class="backdrop">
-            <div class="modal-window">
-              <h1 class="modal-window-title">RULES</h1>
-              <button type="button" class="modal-btn">
-                <svg class="modal-button-icon">
-                  <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </section>
       </div>
+      <section class="rules-field">
+        <button type="button" class="button rules-btn">RULES</button>
+        <div class="backdrop">
+          <div class="modal-window">
+            <h1 class="modal-window-title">RULES</h1>
+            <button type="button" class="modal-btn">
+              <svg class="modal-button-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="attribution">
       Challenge by

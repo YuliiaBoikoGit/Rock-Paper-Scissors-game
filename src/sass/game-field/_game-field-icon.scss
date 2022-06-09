@@ -1,0 +1,33 @@
+.game-item-icon {
+    fill: $secondary-text-color;
+}
+
+.paper {
+    width: 48px;
+    height: 56px;
+
+    @media screen and (min-width: 1366px) {
+        width: 73px;
+        height: 86px;
+    }
+}
+
+.rock {
+    height: 50px;
+    width: 50px;
+
+    @media screen and (min-width: 1366px) {
+        width: 76px;
+        height: 76px;
+    }
+}
+
+.scissors {
+    width: 63px;
+    height: 63px;
+
+    @media screen and (min-width: 1366px) {
+        width: 96px;
+        height: 96px;
+    }
+}

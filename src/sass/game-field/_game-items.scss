@@ -1,0 +1,58 @@
+.game-items-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 105px;
+
+
+    @media screen and (min-width: 1366px) {
+        width: 476px;
+
+        margin-top: 64px;
+    }
+}
+
+.game-field-bg-icon {
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+    width: 166px;
+    height: 188px;
+
+    @media screen and (min-width: 1366px) {
+        top: 99.5px;
+        width: 254px;
+        height: 287px;
+    }
+}
+
+.game-item {
+    position: relative;
+
+    &::before {
+        @media screen and (min-width: 1366px) {
+            content: '';
+            display: block;
+            visibility:hidden;
+            position: absolute;
+            top: -24px;
+            left: -27px;
+            width: 252px;
+            height: 248px;
+            background-color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.05;
+            border-radius: 50%;
+            transition: visibility $transition-time $cubic;
+        }
+    }
+}
+
+.game-item:hover::before {
+    visibility:visible;
+}

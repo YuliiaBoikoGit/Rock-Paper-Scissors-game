@@ -1,2 +1,14 @@
+@import './base/variables';
+@import './base/reset';
+@import './base/base';
+@import './layout/visually-hidden';
+@import './layout/modal';
+@import './layout/container';
+@import './layout/score-section';
+@import './layout/button';
+@import './score-field/score-field';
+@import './game-field/game-items';
+@import './game-field/game-field-icon';
+@import './game-field/game-field-btn';
 @import './attribution';
 
